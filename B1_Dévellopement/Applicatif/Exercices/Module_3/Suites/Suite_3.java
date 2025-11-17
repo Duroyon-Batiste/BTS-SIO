@@ -1,4 +1,4 @@
-package B1_Dévellopement.Applicatif.Exercices.Module_3;
+package B1_Dévellopement.Applicatif.Exercices.Module_3.Suites;
 
 public class Suite_3 {
     public static void main(String[] args) throws Exception {

@@ -1,4 +1,4 @@
-package B1_Dévellopement.Applicatif.Exercices.Module_3;
+package B1_Dévellopement.Applicatif.Exercices.Module_3.Motifs;
 
 import java.util.Scanner;
 
