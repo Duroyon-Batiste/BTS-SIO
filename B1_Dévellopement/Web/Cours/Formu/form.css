@@ -1,0 +1,56 @@
+.btn {
+    background-color: #0e9a63;
+    color: white;
+    border: 1px solid #187150;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    height: auto;
+}
+
+.btn:hover {
+    background-color: #fa54ac;
+    border-color: #912d60;
+    font-size: 40px;
+}
+
+#titreprincipal {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Disney";
+}
+
+input , select {
+    height: 30px;
+    width: 200px;
+}
+
+
+/* on importe la police */
+@font-face {
+    font-family: "Disney";
+    src: url("waltograph42.otf");
+}
+
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f0;
+    box-shadow: 5px 5px 5px #888888;
+    padding: 10px;
+}
+label {
+    width: 100px;
+    display: inline-block;
+    font-family: "Disney";
+}
+.profil {
+    display: inline-block;
+}
+.profil input {
+    width: 20px;
+    height: 15px;
+}
