@@ -12,7 +12,7 @@ header {
     padding: 20px;
     height: 21px;
     
-    background-color: #f8f9fa;
+    background-color: #d9dee4;
     color: black;
 
     font-family: Arial;
@@ -58,6 +58,46 @@ header {
     color: black;
     text-shadow: 2px 2px 2px gray;
 }
+
+.home_btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #cfcfcf;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+.btn-grey {
+    background-color: #e6e6e6;
+    color: black;
+}
+
+
+
+.btn-black {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+
+.btn:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -78,4 +118,8 @@ a {
 }
 .portrait_image {
     width: 30%;
+}
+.footer {
+    padding: 15px;
+    background-color: #d9dee4;
 }
