@@ -66,12 +66,16 @@ a {
 .about_me {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .presentation_text {
-    width: 50%;
+    width: 40%;
     text-align: justify;
+    font-size: large;
     
 }
 .portrait_image {
-    width: 50%;
+    width: 30%;
 }
