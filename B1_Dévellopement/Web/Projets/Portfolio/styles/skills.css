@@ -7,17 +7,32 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color:#d9dee4;
 }
 
 /* ===== HEADER ===== */
 header {
     padding: 20px;
     height: 60px;
-    background-color: #d9dee4;
+    background-color: lightgray;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Style de base pour les liens de nav */
+.head_nav a {
+    padding: 8px 16px;
+    border-radius: 12px;       /* coins arrondis */
+    border: 1px solid transparent; /* contour invisible par défaut */
+    transition: background-color 0.3s, border 0.3s; /* transition douce */
+}
+
+/* Effet hover */
+.head_nav a:hover {
+    background-color: rgba(29, 29, 29, 0.1); /* fond léger */
+    border: 1px solid #1d1d1d;             /* contour visible */
 }
 
 .head_nav {
@@ -53,6 +68,12 @@ a {
 }
 
 /* ===== SECTION SKILLS ===== */
+.skills_title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 36px;
+}
+
 .skills {
     display: flex;
     flex-direction: column;
@@ -69,15 +90,33 @@ a {
 .skill {
     flex-direction: column;
     width: 25%;
-    border: solid lightgrey 2px;
+    border: solid darkgray 2px;
     border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+.skill:hover {
+    box-shadow: 2px 2px 10px gray;
+    transform: translateY(-5px);
+    transition: 0.3s;
 }
 
 .language_logo {
-    width: 160px;
-    height: 160px;
-    align-items: center;
     padding-top: 20px;
+    padding-left: 5vw;
+    padding-bottom: 10px;
+}
+
+.logo_mysql {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 4vw;
+}
+
+.logo_css {
     padding-left: 6vw;
 }
 
@@ -91,13 +130,12 @@ a {
     text-align: justify;
 }
 
-
         /* ===== FOOTER ===== */
     /* Footer général */
 footer {
     display: flex;
     justify-content: center;
-    background-color: #d9dee4;
+    background-color: lightgray;
     padding: 30px 0;
 }
 
