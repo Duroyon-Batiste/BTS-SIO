@@ -10,14 +10,29 @@ body {
 }
 
 /* HEADER */
+/* ===== HEADER ===== */
 header {
     padding: 20px;
     height: 60px;
-    background-color: #d9dee4;
+    background-color: lightgray;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Style de base pour les liens de nav */
+.head_nav a {
+    padding: 8px 16px;
+    border-radius: 12px;       /* coins arrondis */
+    border: 1px solid transparent; /* contour invisible par défaut */
+    transition: background-color 0.3s, border 0.3s; /* transition douce */
+}
+
+/* Effet hover */
+.head_nav a:hover {
+    background-color: rgba(29, 29, 29, 0.1); /* fond léger */
+    border: 1px solid #1d1d1d;             /* contour visible */
 }
 
 .head_nav {
@@ -28,6 +43,7 @@ header {
 .logo {
     height: 30px;
 }
+
 
 /* HOME */
 .home {
