@@ -255,3 +255,15 @@ footer {
         transform: none;
     }
 }
+/* helpers pour scripts.js */
+.input-error {
+  outline: 2px solid rgba(255,0,0,0.25);
+  box-shadow: 0 0 0 3px rgba(255,0,0,0.06);
+}
+
+.contact-message {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 500;
+}

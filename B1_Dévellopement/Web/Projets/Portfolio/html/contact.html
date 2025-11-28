@@ -20,7 +20,7 @@
             <a href="veille.html">Veille</a>
             <a href="skills.html">Compétences</a>
             <a href="parcour.html">Parcours</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
 
@@ -35,15 +35,18 @@
         <div class="contact_card">
             <h2>Contactez-moi</h2>
             <p class="contact_text">
-                Vous pouvez me contacter via le formulaire ci-dessous, ou en utilisant l’un des moyens listés plus bas.
+                Vous pouvez me contacter via le formulaire ci-dessous, 
+                ou en utilisant l’un des moyens listés plus bas.
             </p>
 
-            <form class="contact_form">
-                <input type="text" placeholder="Votre nom" required>
-                <input type="email" placeholder="Votre email" required>
-                <textarea placeholder="Votre message" required></textarea>
+            <form action="sendmail.php" method="post">
+                Email: <input type="email" name="from_email" required><br>
+                Objet: <input type="text" name="subject" required><br>
+                Message:<br>
+                <textarea name="message" required></textarea><br>
                 <button type="submit">Envoyer</button>
             </form>
+
         </div>
 
     </section>
@@ -58,17 +61,9 @@
 
             <div class="contact_method">
                 <img src="" class="contact_icon">
-                <h4 class="contact_title">Téléphone</h4>
-                <p class="contact_desc">
-                    Contactez-moi directement par appel ou SMS via le <phone>+33 7 68 13 69 61</phone>.
-                </p>
-            </div>
-
-            <div class="contact_method">
-                <img src="" class="contact_icon">
                 <h4 class="contact_title">Email</h4>
                 <p class="contact_desc">
-                    Contactez-moi par email à l’adresse <email>duroyon.babatiste@hotmail.com</email>.
+                    Contact direct via votre service de messagerie.
                 </p>
             </div>
 
@@ -76,7 +71,44 @@
                 <img src="" class="contact_icon">
                 <h4 class="contact_title">LinkedIn</h4>
                 <p class="contact_desc">
-                    Contactez-moi via la messagerie LinkedIn : <a href="https://www.linkedin.com/in/batiste-duroyon-745730384">Batiste Duroyon</a>.
+                    Pour échanger autour de mon parcours ou mes projets.
+                </p>
+            </div>
+
+            <div class="contact_method">
+                <img src="" class="contact_icon">
+                <h4 class="contact_title">Discord</h4>
+                <p class="contact_desc">
+                    Pour discuter rapidement et de manière informelle.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Ligne 2 -->
+        <div class="contact_methods_row">
+
+            <div class="contact_method">
+                <img src="" class="contact_icon">
+                <h4 class="contact_title">Instagram</h4>
+                <p class="contact_desc">
+                    Pour me suivre ou envoyer un message privé.
+                </p>
+            </div>
+
+            <div class="contact_method">
+                <img src="" class="contact_icon">
+                <h4 class="contact_title">GitHub</h4>
+                <p class="contact_desc">
+                    Pour consulter mes projets ou me contacter.
+                </p>
+            </div>
+
+            <div class="contact_method">
+                <img src="" class="contact_icon">
+                <h4 class="contact_title">X / Twitter</h4>
+                <p class="contact_desc">
+                    Pour m’envoyer un message direct.
                 </p>
             </div>
 
@@ -99,8 +131,7 @@
                     <a href="contact.html" class="footer_btn footer_btn_white">Me contacter</a>
 
                     <a href="../ressources/Curriculum Vitae.pdf" 
-                       download="Curriculum Vitae" 
-                       target="_blank" 
+                       download="Curriculum Vitae"
                        class="footer_btn footer_btn_black">
                        Télécharger CV
                     </a>
@@ -121,5 +152,9 @@
         </div>
     </footer>
 
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="../scripts/scripts.js"></script>
+
+    <script src="../scripts/scripts.js"></script>
 </body>
 </html>
